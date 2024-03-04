@@ -63,7 +63,7 @@ manifest:
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/guides/modules.html
     - name: zephyr
       remote: zephyrproject-cognid
-      repo-path: sdk-zephyr
+      repo-path: zephyr
       revision: cognid
       import:
         # In addition to the zephyr repository itself, NCS also
