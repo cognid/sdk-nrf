@@ -24,7 +24,7 @@ manifest:
     - name: zephyrproject
       url-base: https://github.com/zephyrproject-rtos
     - name: zephyrproject-cognid
-      url-base: https://github.com/congnid
+      url-base: https://github.com/cognid
     - name: throwtheswitch
       url-base: https://github.com/ThrowTheSwitch
     - name: armmbed
