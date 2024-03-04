@@ -23,6 +23,8 @@ manifest:
     # Third-party repository sources:
     - name: zephyrproject
       url-base: https://github.com/zephyrproject-rtos
+    - name: zephyrproject-cognid
+      url-base: https://github.com/congnid
     - name: throwtheswitch
       url-base: https://github.com/ThrowTheSwitch
     - name: armmbed
@@ -60,8 +62,9 @@ manifest:
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/introduction/index.html
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/guides/modules.html
     - name: zephyr
+      remote: zephyrproject-cognid
       repo-path: sdk-zephyr
-      revision: 3912101710c23bfa3b6a2c5ab6fdecb6043a7133
+      revision: cognid
       import:
         # In addition to the zephyr repository itself, NCS also
         # imports the contents of zephyr/west.yml at the above
