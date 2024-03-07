@@ -1,7 +1,8 @@
 math(EXPR NCS_VERSION_CODE "(${NCS_VERSION_MAJOR} << 16) + (${NCS_VERSION_MINOR} << 8)  + (${NCS_VERSION_PATCH})")
 
-# to_hex is made available by ${ZEPHYR_BASE}/cmake/hex.cmake
-to_hex(${NCS_VERSION_CODE} NCS_VERSION_NUMBER)
+# Fix for deprecated to_hex function
+execute_process(COMMAND printf "%x" ${NCS_VERSION_CODE}
+                OUTPUT_VARIABLE NCS_VERSION_NUMBER)
 
 if(DEFINED BUILD_VERSION)
   set(ncs_banner_version BUILD_VERSION)
